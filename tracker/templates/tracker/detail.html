@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ show_interview.company_name }} - {{ show_interview.position }}
+{% endblock title %}
+
+{% block content %}
+    <main>
+        <div class="project-detail">
+            <h1>{{ show_interview.company_name }}</h1>
+            <h2>Interview</h2>
+            <p>
+                <a href="{% url 'update_interview' show_interview.id %}">Update Interview</a>
+            </p>
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th>Industry</th>
+                        <th>Position</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </thead>
+                    <tbody>
+                        {% comment %} {% for item in show_interview %} {% endcomment %}
+                            <tr>
+                                <td> <a href="{{ show_interview.job_link }}" target="_blank">
+                                    {{ show_interview.company_name }} </a>
+                                </td>
+                                <td>{{ show_interview.industry }}</td>
+                                <td>{{ show_interview.position  }}</td>
+                                <td>{{ show_interview.date }}</td>
+                                <td>{{ show_interview.time }}</td>
+                                <td>{{ show_interview.responded|yesno }}</td>
+                            </tr>
+                        {% comment %} {% endfor %} {% endcomment %}
+                    </tbody>
+                </table>
+                <h3> Notes </h3>
+                <p> {{ show_interview.notes }} </p>
+            </div>
+        </main>
+    {% endblock content %}
