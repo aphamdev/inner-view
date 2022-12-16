@@ -7,14 +7,14 @@ Interviews
 {% block content %}
 <main>
     <div class="project-list">
-        <h1>My Interviews</h1>
+        <h1 id="InterviewBorder">My Interviews</h1>
          <p>
             <a href="{% url 'create_interview' %}">Add an Interview</a>
         </p>
         {% if interviews|length == 0 %}
             <p>You don't have any interviews scheduled.</p>
         {% else %}
-            <h3>Upcoming Interviews</h3>
+            <h2>Upcoming Interviews</h2>
             <table>
                 <thead>
                     <th>Company Name</th>
@@ -24,7 +24,7 @@ Interviews
                 </thead>
                 <tbody>
                     {% for interview in interviews %}
-                        {% if interview.date > today_date %}
+                        {% if interview.date >= today_date %}
                         <tr>
                             <td>
                                 <a href="{% url 'show_interview' interview.id %}">{{ interview.company_name }}</a>
@@ -43,7 +43,7 @@ Interviews
                     {% endfor %}
                 </tbody>
             </table>
-            <h3>Past Interviews</h3>
+            <h2>Past Interviews</h2>
             <table>
                 <thead>
                     <th>Company Name</th>

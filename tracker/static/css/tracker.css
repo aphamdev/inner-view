@@ -5,7 +5,13 @@ body, input, textarea, button {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
-  padding: 50px;
+  padding: 114px;
+}
+.LoginFormat {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 118px;
 }
 
 select {
@@ -26,7 +32,7 @@ header nav ul {
   border-bottom: 1px solid #CCC;
   box-sizing: border-box;
   list-style: none;
-  margin-top: 0;
+  margin-top: -100px;
   margin-bottom: 2em;
   padding: 0 0 0 1em;
 }
@@ -205,23 +211,58 @@ table {
     text-align: center;
 }
 
+/* Login Page Welcome */
+#Welcome {
+  margin-bottom: 98px;
+  margin-top: -87px;
+  text-align: center;
+  font-weight: bolder;
+}
+
 /*  Avatar Picture  */
 .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     position: absolute;
-    top: 14px;
-    left: calc(49% - 50px);
+    top: 147px;
+    left: calc(50% - 50px);
 }
 .avatar2 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   position: absolute;
-  top: 14px;
+  top: 98px;
   left: calc(50% - 50px);
 }
 
+.center-text {
+  text-align: center;
+}
 
+a {
+  text-decoration: none;
+  /* background-color: #69bed3; */
+  color: rgb(25, 25, 25);
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
 
+a:hover {
+  background-color: rgb(226, 226, 228);
+}
+
+.UserFormat {
+  margin-left: 75%;
+}
+
+#InterviewBorder {
+  border-bottom: 2px solid #DEDEDE;
+  padding-bottom: 10px;
+
+}
