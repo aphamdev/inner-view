@@ -12,6 +12,8 @@ body, input, textarea, button {
   font-size: 16px;
   margin: 0;
   padding: 118px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 select {
@@ -206,9 +208,10 @@ table {
 }
 
 #Signup-Login-Page {
-    padding: 1em;
-    font-weight: bold;
-    text-align: center;
+  padding: 1em;
+  font-weight: bold;
+  text-align: center;
+
 }
 
 /* Login Page Welcome */
@@ -216,7 +219,7 @@ table {
   margin-bottom: 98px;
   margin-top: -87px;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 /*  Avatar Picture  */
@@ -227,6 +230,7 @@ table {
     position: absolute;
     top: 147px;
     left: calc(50% - 50px);
+    outline: auto;
 }
 .avatar2 {
   width: 100px;
@@ -265,4 +269,8 @@ a:hover {
   border-bottom: 2px solid #DEDEDE;
   padding-bottom: 10px;
 
+}
+
+#logo {
+  width: 150px;
 }
