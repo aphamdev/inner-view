@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 /* Set all elements to use the Open Sans font */
-body, input, textarea, button, select {
+body, input, textarea, button {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
-  padding: 0;
+  padding: 50px;
+}
+
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0px;
 }
 
 /* Set the background color of all pages */
 html, body {
-  background-color: #F2F2F2;
+  background-color: #b7dce5;
 }
 
 /* Set the style of the navigation list */
@@ -184,3 +191,37 @@ table {
 .project-detail tbody :not(tr:last-child) td {
   border-bottom: 1px solid #DEDEDE;
 }
+
+/* Sign in Paragraph */
+#Signin {
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#Signup-Login-Page {
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*  Avatar Picture  */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    left: calc(49% - 50px);
+}
+.avatar2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  left: calc(50% - 50px);
+}
+
+
+

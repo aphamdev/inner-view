@@ -6,6 +6,7 @@
 {% block content %}
     <main>
         <div class="signup-form">
+            <img src="https://cdn-icons-png.flaticon.com/128/1177/1177568.png" class="avatar2">
             <h1>Signup</h1>
             <form method="post">
                 {% csrf_token %}
@@ -13,8 +14,8 @@
                 <button>Signup</button>
             </form>
         </div>
-        <div>
-            <p>Already an Inner-Viewer? <a href="{% url 'login' %}">Sign in!</a></p>
+         <div id="Signup-Login-Page">
+            Already have an account? <a href="{% url 'login' %}">Login!</a>
         </div>
     </main>
 {% endblock content %}
